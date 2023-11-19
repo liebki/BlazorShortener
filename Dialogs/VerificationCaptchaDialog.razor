@@ -1,0 +1,10 @@
+﻿<MudDialog>
+    <DialogContent>
+        <VerificationCaptcha />
+        <MudTextField @bind-Value="VerificationCheckValue" Placeholder="Type the content you see in the image here" />
+    </DialogContent>
+
+    <DialogActions>
+        <MudButton Color="Color.Primary" OnClick="Submit">Check</MudButton>
+    </DialogActions>
+</MudDialog>

@@ -1,0 +1,25 @@
+﻿@inherits LayoutComponentBase
+
+<PageTitle>BlazorShortener</PageTitle>
+
+<MudAppBar Color="Color.Transparent">
+    <MudSpacer />
+    <MudIconButton Icon="@Icons.Custom.Brands.GitHub" Href="https://github.com/liebki/BlazorShortener" Color="Color.Dark" Variant="Variant.Text" />
+    <MudSpacer />
+    <MudIconButton Icon="@Icons.Material.Filled.Home" Href="/" Color="Color.Dark" Variant="Variant.Text" />
+    <MudSpacer />
+    <MudIconButton Icon="@Icons.Material.Filled.LockOpen" Href="/privacypolicy" Color="Color.Dark" Variant="Variant.Text" />
+    <MudSpacer />
+</MudAppBar>
+
+<div class="page" style="overflow: hidden;">
+    <main>
+        <article style="overflow: hidden;" class="content">
+            @Body
+        </article>
+    </main>
+</div>
+
+<MudThemeProvider/>
+<MudDialogProvider/>
+<MudSnackbarProvider/>

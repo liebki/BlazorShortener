@@ -1,0 +1,10 @@
+﻿@page "/"
+
+<PageTitle>BlazorShortener</PageTitle>
+
+<MudContainer>
+    <MudForm Class="center-div">
+        <MudInput @bind-Value="LongUrlValue" MaxLength="2048" Placeholder="Paste your long url here to shorten it!" Style="height: 38px; background-color: rgba(0, 0, 0, 0.45); color: #ffffff; width: 80%;" Class="mx-5" InputType="InputType.Url" T="string" />
+        <MudButton OnClick="ButtonClickShorten" Style="background-color: rgba(0, 0, 0, 0.45); color: #ffffff;" Color="Color.Transparent" Variant="Variant.Filled">Shorten</MudButton>
+    </MudForm>
+</MudContainer>
